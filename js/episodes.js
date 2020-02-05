@@ -31,7 +31,7 @@ fetch(cors+baseURL+id)
                             ${data.description}
                             </div>`)
                 }).join('');
-                episodes.innerHTML = html;
+                episodes.innerHTML += html;
                 console.log(episodes.innerHTML);
             })
     })

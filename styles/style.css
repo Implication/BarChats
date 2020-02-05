@@ -11,11 +11,10 @@ h1{
 }
 
 header {
+    margin-bottom: 400px;
     position: relative;
-     background-image: url('../images/header-background.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    height: 1500px;
 }
 
 .top{
