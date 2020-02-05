@@ -23,7 +23,7 @@ fetch(cors+baseURL+id)
                    
                     if(feed.entries.indexOf(data) !== 0)
                         return (
-                            `<div class="episode container mb-5 border">
+                            `<div class="episode container mb-5">
                             <h5>${data.title}</h5>
                             <audio controls src=${data.enclosures[0].url} type="audio/mpeg">
                             Your browser does not support the audio tag
