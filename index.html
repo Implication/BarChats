@@ -5,36 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/style.css">
-    <title>BarChats</title>
+    <title>Bar Chats</title>
 </head>
 <body>
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-sm  mb-3 nav-pills  border-bottom align-items-end">
-            <img class="logo mr-auto" src="images/BarChatsLog.jpg" alt="">
-            <ul class="navbar-nav">
-        <ul class="navbar-nav justify-content-end">
-            <li class="nav-item mr-5">
-                <a href="/index.html" class="nav-link text-white active">Home</a>
-            </li>
-            <li class="nav-item mr-5">
-                <a href="/about.html" class="nav-link text-white">About</a>
-            </li>
-            <li class="nav-item mr-5">
-                <a href="/episodes.html"  class="nav-link text-white">Episodes</a>
-            </li>
-            <li class="nav-item mr-5">
-                <a href="/contact.html"  class="nav-link text-white">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
-
+    <header>
+        <div class="overlay"></div>
+        <div class="top text-center container">
+                <h1 class="display-1 mb-0">Bar Chats<h1>
+                <h4>With Jay & Duce</h4>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-lg-3 mb-5">
+                <h4 class="text-center">Latest Episode</h4>
+                <iframe src="https://open.spotify.com/embed-podcast/show/6DO0eZQ1JNw0hZZqFnq1jG" 
+                width="100%" height="232" frameborder="0" allowtransparency="false" allow="encrypted-media">
+                </iframe>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-justify">
+                    Join us on our journey through Local breweries in your backyards and ours
+                    While we talk about serious yet not so serious topics about life family and friends.
+                </p>
+            </div>
+    </div>
 </header>
-<main class="container">
-<h1 class="display-1 text-center mb-5">Bar Chats</h1>
+<main>
+    <div id="episodes" class="container">
+
+    </div>
 </main>
-
-
 
 <footer class="border-top mb-5">
 <h3 class="display-3 text-center">Follow us on</h3>
@@ -53,5 +56,7 @@
 </div>
 </div>
 </footer>
+<script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+<script src="js/episodes.js"></script>
 </body>
 </html>

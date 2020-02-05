@@ -1,15 +1,39 @@
 
 body{
     color: rgb(215, 196, 118);
-    background:  rgb(0,0,0)
+    background:  rgb(0,0,0);
+    font-size: 24px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+h1{
+    font-family: 'Rock Salt', cursive;
 }
 
 header {
-    background: rgb(0,0,0)
+    position: relative;
+     background-image: url('../images/header-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1500px;
 }
 
-.logo{
-    height: 10%;
-    width: 10%;
+.top{
+    position: relative;
+    padding-bottom: 10rem;
 }
 
+#episodes{
+    height: 100%;
+    position: relative;
+}
+
+
+
+ .overlay {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   background-color: rgba(0,0,0,.7);
+
+}
