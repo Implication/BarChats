@@ -14,7 +14,6 @@ fetch(cors + baseURL + id)
     return res.json();
   })
   .then(data => {
-    console.log(data.results[0].feedUrl);
     //Feednami is a script that read's rss files
     //We use this to grab the url of the rss feeds that contain the audio files
     feednami.load(data.results[0].feedUrl).then(feed => {
@@ -22,6 +21,7 @@ fetch(cors + baseURL + id)
       let featurehtml = "";
       const html = feed.entries
         .map(data => {
+          //This will grab all of the episodes except for the latest one.
           if (feed.entries.indexOf(data) !== 0)
             return `<div class="episode container mb-5 border rounded border-warning border-3">
                             <h5>${data.title}</h5>
@@ -30,19 +30,10 @@ fetch(cors + baseURL + id)
                             </audio>
                             ${data.description}
                             </div>`;
-          else {
-            featurehtml = `<div class="episode container mb-5">
-                        <h5>${data.title}</h5>
-                        <audio autoplay controls src=${data.enclosures[0].url} type="audio/mpeg">
-                        Your browser does not support the audio tag
-                        </audio>
-                        </div>`;
-          }
         })
         .join("");
       episodes.innerHTML += html;
       feature.innerHTML = featurehtml;
-      console.log(featurehtml);
     });
   })
   .catch(err => {

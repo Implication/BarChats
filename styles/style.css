@@ -12,8 +12,6 @@ h1 {
 header {
   margin-bottom: 200px;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .top {
@@ -31,10 +29,6 @@ header {
   width: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-.header-main {
-  position: relative;
 }
 
 .css-1gln9it-CoverArt e11bdota0 {
@@ -77,6 +71,10 @@ main {
   -webkit-text-stroke-color: #fff !important;
 }
 
+.instagram-media {
+  height: 600px;
+}
+
 @media (max-width: 741px) {
   .podcast-link {
     display: block;
@@ -85,5 +83,21 @@ main {
   }
   #apple-podcast-link {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 741px) {
+  .instagram-media {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1210px) {
+  .instagram-media {
+    height: 690px;
+  }
+
+  .latest-episode-content {
+    padding-top: 100px;
   }
 }
