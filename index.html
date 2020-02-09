@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Bar Chats</title>
 </head>
+
 <body>
     <header>
         <div class="top text-center container">
-                <h1 class="display-1 mb-0">Bar Chats<h1>
-                <h4>With Jay & Duce</h4>
+            <h1 class="display-1 mb-0">Bar Chats<h1>
+                    <h4>With Jay & Duce</h4>
+            <div class="podcast-links">
+                <a href="https://open.spotify.com/show/6DO0eZQ1JNw0hZZqFnq1jG?si=CN9uE63CS4aPUl-_dFEouQ">
+                    <img src="images/spotify.png" alt="Spotify link" class="row podcast-link">
+                </a>
+                <a href="https://podcasts.apple.com/us/podcast/barchats/id1493152619">
+                    <img id="apple-podcast-link" src="images/apple-podcast.jpg" alt="Apple Podcast Link" class="row podcast-link">
+                </a>
+                <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS83Nzk3ODkucnNz">
+                    <img src="images/google-podcast.png" alt="Google Podcast Link" class="row podcast-link">
+                </a>
             </div>
+        </div>
         </div>
         <div class="header-main justify-content-around container">
             <div class=" mb-5">
-                <h4 class="mb-5 ml-2">Latest Episode</h4>
-                <iframe src="https://open.spotify.com/embed-podcast/show/6DO0eZQ1JNw0hZZqFnq1jG" 
-                width="100%" height="232" frameborder="0" allowtransparency="false" allow="encrypted-media">
+                <iframe src="https://open.spotify.com/embed-podcast/show/6DO0eZQ1JNw0hZZqFnq1jG" width="100%"
+                    height="232" frameborder="0" allowtransparency="false" allow="encrypted-media">
                 </iframe>
             </div>
-            <div class="">
-                <p class="text-justify">
+            <div>
+                <h4 class="text-justify">
                     Join us on our journey through Local breweries in your backyards and ours
                     While we talk about serious yet not so serious topics about life family and friends.
+                </h4>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="episodes" class="container">
+            <h1 class="mb-5 text-center">Episodes</h1>
+        </div>
+    </main>
+
+    <footer class="mb-5 container text-center">
+        <h3 class="display-3 ml-2">Follow us on</h3>
+        <div class="row">
+            <div class="col">
+                <a href="https://www.facebook.com/BarChats2020/">
+                    <img class="img-fluid mt-5 w-25 ml-2" src="images/facebook.png" alt="Bar Chats Facebook site">
+                </a>
+                </a>
                 </p>
             </div>
-    </div>
-</header>
-<main>
-    <div id="episodes" class="container">
-        <h1 class="mb-5">Episodes</h1>
-    </div>
-</main>
-
-<footer class="mb-5 container">
-<h3 class="display-3 ml-2">Follow us on</h3>
-<div class="row">
-<div class="col">
-<a href="https://www.facebook.com/BarChats2020/">
-<img class="img-fluid mt-5 w-25 ml-2"src="images/facebook.png" alt="Bar Chats Facebook site">
-</a>
-</a>
-</p>
-</div>
-<div class="col">
-<a href="https://www.instagram.com/bar.chats/?hl=en">
-    <img class="img-fluid mt-5 w-25"src="images/instagram.png" alt="Bar Chats Facebook site">
-    </a>
-</div>
-</div>
-</footer>
-<script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
-<script src="js/episodes.js"></script>
+            <div class="col">
+                <a href="https://www.instagram.com/bar.chats/?hl=en">
+                    <img class="img-fluid mt-5 w-25" src="images/instagram.png" alt="Bar Chats Facebook site">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <script src="js/episodes.js"></script>
 </body>
+
 </html>
