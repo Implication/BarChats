@@ -1,0 +1,99 @@
+body {
+  color: rgb(215, 196, 118);
+  background: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+h1 {
+  font-family: "Rock Salt", cursive;
+}
+
+header {
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.top {
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+#episodes {
+  height: 100%;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.css-1gln9it-CoverArt e11bdota0 {
+  display: none;
+}
+
+.podcast-link {
+  height: 75px;
+  width: 175px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.border-3 {
+  border-color: #655724 !important;
+  border-width: 5px !important;
+  border-radius: 25px !important;
+  background: #655724;
+  color: #ddd;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+#apple-podcast-link {
+  width: 250px;
+}
+
+main {
+  border-top: 3px solid rgb(215, 196, 118);
+  border-bottom: 3px solid rgb(215, 196, 118);
+}
+
+#episodes {
+  margin-top: 30px;
+}
+
+.audio-text-color {
+  color: white !important;
+  -webkit-text-stroke-width: 0px !important;
+  -webkit-text-stroke-color: #fff !important;
+}
+
+@media (max-width: 741px) {
+  .podcast-link {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  #apple-podcast-link {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 741px) {
+  .instagram-media {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1210px) {
+  .instagram-media {
+    height: 690px;
+  }
+
+  .latest-episode-content {
+    padding-top: 100px;
+  }
+}
