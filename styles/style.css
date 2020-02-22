@@ -9,6 +9,33 @@ h1 {
   font-family: "Rock Salt", cursive;
 }
 
+.landing-content {
+  margin-top: 10%;
+  height: 100%;
+  margin-bottom: 20%;
+}
+
+.landing-content iframe {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.landing-content p {
+  padding: 100px;
+}
+
+.landing-content img {
+  height: 100%;
+  width: 100%;
+  padding-top: 5%;
+  padding-right: 5%;
+}
+
+.navbar-nav.navbar-center {
+  margin-left: 25%;
+}
+
 header {
   margin-bottom: 200px;
   position: relative;
@@ -56,11 +83,6 @@ header {
   width: 250px;
 }
 
-main {
-  border-top: 3px solid rgb(215, 196, 118);
-  border-bottom: 3px solid rgb(215, 196, 118);
-}
-
 #episodes {
   margin-top: 30px;
 }
@@ -86,6 +108,10 @@ main {
   .instagram-media {
     height: 600px;
   }
+
+  .navbar-nav.navbar-center {
+    margin-left: 15%;
+  }
 }
 
 @media (min-width: 1210px) {
@@ -95,5 +121,14 @@ main {
 
   .latest-episode-content {
     padding-top: 100px;
+  }
+
+  .navbar-nav.navbar-center {
+    margin-left: 30%;
+  }
+
+  .landing-content {
+    margin-left: 15% !important;
+  }
   }
 }
