@@ -23,9 +23,10 @@ h1 {
 
 .landing-content p {
   padding: 100px;
+  padding-bottom: 40px;
 }
 
-.landing-content img {
+ .landing-image {
   height: 100%;
   width: 100%;
   padding-top: 5%;
@@ -36,52 +37,24 @@ h1 {
   margin-left: 25%;
 }
 
-header {
-  margin-bottom: 200px;
-  position: relative;
-}
 
-.top {
-  position: relative;
-  padding-bottom: 10rem;
-}
 
 #episodes {
   height: 100%;
   position: relative;
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-}
 
-.css-1gln9it-CoverArt e11bdota0 {
-  display: none;
-}
+
 
 .podcast-link {
   height: 75px;
-  width: 175px;
+  width: 20%;
   display: inline-block;
-  margin: 10px;
+  margin-left: 10%;
 }
 
-.border-3 {
-  border-color: #655724 !important;
-  border-width: 5px !important;
-  border-radius: 25px !important;
-  background: #655724;
-  color: #ddd;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
-}
 
-#apple-podcast-link {
-  width: 250px;
-}
 
 #episodes {
   margin-top: 30px;
