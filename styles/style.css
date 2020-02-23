@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(215, 196, 118);
   background: rgb(0, 0, 0);
@@ -9,37 +13,43 @@ h1 {
   font-family: "Rock Salt", cursive;
 }
 
-header {
-  margin-bottom: 200px;
-  position: relative;
+.landing-content {
+  margin-top: 10%;
+  height: 100%;
+  margin-bottom: 20%;
 }
 
-.top {
-  position: relative;
-  padding-bottom: 10rem;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.landing-content iframe {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar li {
+  color: #655724 important;
+}
+.landing-content p {
+  padding: 100px;
+  padding-bottom: 40px;
+}
+
+.landing-image {
+  height: 100%;
+  width: 100%;
+  padding-top: 5%;
+  padding-right: 5%;
 }
 
 #episodes {
   height: 100%;
   position: relative;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.css-1gln9it-CoverArt e11bdota0 {
-  display: none;
-}
-
-.podcast-link {
-  height: 75px;
-  width: 175px;
-  display: inline-block;
-  margin: 10px;
 }
 
 .border-3 {
@@ -52,17 +62,20 @@ header {
   -webkit-text-stroke-color: #000;
 }
 
-#apple-podcast-link {
-  width: 250px;
-}
-
-main {
-  border-top: 3px solid rgb(215, 196, 118);
-  border-bottom: 3px solid rgb(215, 196, 118);
+.podcast-link {
+  height: 75px;
+  width: 20%;
+  display: inline-block;
+  margin-left: 10%;
 }
 
 #episodes {
   margin-top: 30px;
+}
+
+#media {
+  margin: 15% auto;
+  width: 80%;
 }
 
 .audio-text-color {
@@ -88,6 +101,29 @@ main {
   }
 }
 
+@media (max-width: 940px) {
+  nav {
+    float: left;
+  }
+}
+
+@media (max-width: 1152px) {
+  #media {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 982px) {
+  .navbar-nav.navbar-center {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 1152px) {
+  .navbar-nav.navbar-center {
+    margin-left: 30%;
+  }
+}
 @media (min-width: 1210px) {
   .instagram-media {
     height: 690px;
@@ -95,5 +131,9 @@ main {
 
   .latest-episode-content {
     padding-top: 100px;
+  }
+
+  .landing-content {
+    margin-left: 15% !important;
   }
 }
