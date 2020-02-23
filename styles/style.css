@@ -84,6 +84,19 @@ nav {
   -webkit-text-stroke-color: #fff !important;
 }
 
+@media (max-width: 470px) {
+  section#media {
+    width: 100%;
+  }
+}
+
+@media (max-width: 663px) {
+  .podcast-link {
+    width: 50%;
+    height: 125px;
+  }
+}
+
 @media (max-width: 741px) {
   .podcast-link {
     display: block;
