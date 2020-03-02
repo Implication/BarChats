@@ -84,6 +84,14 @@ nav {
   -webkit-text-stroke-color: #fff !important;
 }
 
+.cashews {
+  width: 50px;
+  height: 40px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
 @media (max-width: 470px) {
   section#media {
     width: 100%;
@@ -117,6 +125,10 @@ nav {
 @media (max-width: 940px) {
   nav {
     float: left;
+  }
+
+  .cashews {
+    display: none;
   }
 }
 
