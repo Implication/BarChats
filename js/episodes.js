@@ -23,9 +23,9 @@ fetch(cors + baseURL + id)
         .map(data => {
           //This will grab all of the episodes except for the latest one.
           if (feed.entries.indexOf(data) !== 0)
-            return `<div class="episode container mb-5 border rounded border-warning border-3">
+            return `<div class="episode container mb-5 p-5 border rounded border-warning border-3">
                             <h5>${data.title}</h5>
-                            <audio class="audio-text-color" controls src=${data.enclosures[0].url} type="audio/mpeg">
+                            <audio class="audio-text-color audio-size" controls src=${data.enclosures[0].url} type="audio/mpeg">
                             Your browser does not support the audio tag
                             </audio>
                             ${data.description}

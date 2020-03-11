@@ -5,7 +5,7 @@ html {
 body {
   color: rgb(215, 196, 118);
   background: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 22px;
   font-family: "Archivo Black", sans-serif;
 }
 
@@ -92,16 +92,21 @@ nav {
   padding-right: 5px;
 }
 
-@media (max-width: 470px) {
-  section#media {
-    width: 100%;
-  }
-}
-
 @media (max-width: 663px) {
   .podcast-link {
     width: 50%;
     height: 125px;
+    padding: 20px;
+  }
+
+  #episodes {
+    margin-right: 40px !important;
+    margin-left: 40px !important;
+  }
+
+  .audio-size {
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -133,10 +138,6 @@ nav {
 }
 
 @media (max-width: 1152px) {
-  #media {
-    width: 50%;
-    margin: 0 auto;
-  }
 }
 @media (min-width: 982px) {
   .navbar-nav.navbar-center {
